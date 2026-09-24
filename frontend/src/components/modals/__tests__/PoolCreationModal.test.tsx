@@ -28,6 +28,8 @@ const defaultWalletState = {
   disconnect: jest.fn(),
   signTransaction: jest.fn().mockResolvedValue("signed-xdr"),
   refreshBalance: jest.fn(),
+  walletNetworkName: null,
+  recheckNetwork: jest.fn(),
 };
 
 describe("PoolCreationModal XLM fee validation (#1332)", () => {
